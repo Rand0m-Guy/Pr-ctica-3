@@ -257,7 +257,7 @@ def q3():
     return len(pila) == 0
 
 # Cadena a analizar
-s = "var_b = 8-9;"
+s = "VARIABLE_=(3)/((3*5)+_vasdAAA/(2%1)*var)-(2+3)*variable;"
 print(s)
 ans = q0(0)
 if ans:
@@ -299,6 +299,6 @@ if ans:
     # print(sentence)
     parser = nltk.ChartParser(grammar)
     tokens = sentence.split()
-
     for tree in parser.parse(tokens):
         tree.pretty_print()
+        break
